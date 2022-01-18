@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <div class="content">
         <div class="information">
             <h1 lang="en">Relaxed</h1>
-            <h1 lang="no">Avslappet</h1>
+            <h1 lang="no">Entspannung</h1>
 
             <hr>
 
@@ -20,37 +20,22 @@
                 <br>
                 Choose a situation that, when you think about it, makes you feel relaxed/calm/content.
                 <br> <br>
-                Our goal is for you to experience the same emotions as you did then, so choose a situation with strong feelings that you have a clear memory of. 
-                <br> <br>
-                Write down an as vivid description of the situation as possible. You may include what happend, what do you see and hear and how did that make you feel. 
-                <br>
             </p>
             <p lang="no">
-                Beskriv i detalj en situasjon i livet ditt hvor du følte deg veldig avslappet, og beskriv den slik at en person som leser beskrivelsen også føler seg avslappet.
+                Bitte beschreiben Sie im Detail eine Situation, in der Sie sich sehr entspannt/ruhig/zufrieden gefühlt haben. Beschreiben Sie die Situation so, dass eine Person, die ihren Text lesen würde, die selben Emotionen empfinden würde.
                 <br>
-                Velg en situasjon som gjør deg avslappet når du tenker på den nå.
+                Suchen Sie sich eine Situation aus, bei der Sie Entspannung/Ruhe/Zufriedenheit empfinden, wenn Sie daran denken.
                 <br> <br>
-                Målet er at du skal kjenne på den samme følelsen som du gjorde i situasjonen du beskriver. Velg derfor et minne som du husker godt.
-                <br> <br>
-                I beskrivelsen kan du ta med hva du ser, hører og føler.
             </p>
         </div>
 
         <div class="session_information">
             <p lang="en">
-                You should write using the pen and paper provided.
-                <br> <br>
                 This session will last 5 minutes. You will be notified when the time is up and will automatically be led to the next page of the experiment.
-                <br> <br>
-                Remember! We will make sure that whatever you write will stay with you.
                 <br> <br>
             </p>
             <p lang="no">
-                Du skal skrive med utdelt penn og papir.
-                <br> <br>
-                Denne oppgaven varer i 5 minutter. Du vil få beskjed når tiden er gått ut og vil automatisk bli ført videre i eksperimentet.
-                <br> <br>
-                Husk! Vi vil sørge for at alt du skriver forblir hos deg.
+                Diese Sitzung wird 5 Minuten dauern. Sie werden benachrichtigt, sobald die Zeit vorbei ist und automatisch zur nächsten Seite weitergeleitet.
                 <br> <br>
             </p>
 
@@ -65,21 +50,21 @@
         <div class="navigation_buttons development">
             <button onclick="navigate_to_previous_page()"> 
                 <span lang="en">Back</span> 
-                <span lang="no">Tilbake</span> 
+                <span lang="no">Zurück</span> 
             </button>
             <button onclick="navigate_to_next_page()"> 
                 <span lang="en">Continue</span> 
-                <span lang="no">Fortsett</span> 
+                <span lang="no">Fortsetzen</span> 
             </button>
         </div>
 
         <div class="popup" id="popup_countdown">
             <div class="popuptext" >
                 <h3 lang="en">Time is running out!</h3>
-                <h3 lang="no">Tiden løper ut!</h3>
+                <h3 lang="no">Die Zeit geht zu Ende!</h3>
 
                 <p lang="en" id="popup_msg">You will be brought to the next page in <span id="time_left"></span> seconds.</p>
-                <p lang="no" id="popup_msg">Du vil bli sendt til neste side om <span id="time_left"></span> sekunder.</p>
+                <p lang="no" id="popup_msg">Sie werden zur nächsten Seite weitergeleitet in <span id="time_left"></span> Sekunden.</p>
             </div>
         </div>
     </div>
@@ -88,17 +73,17 @@
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norwegian</option>
+                <option value="no">Deutsch</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <div class="content">
         <div class="information">
             <h1 lang="en">You are finished!</h1>
-            <h1 lang="no">Du er ferdig!</h1>
+            <h1 lang="no">Sie sind fertig!</h1>
 
             <hr>
 
@@ -23,17 +23,17 @@
                 You can take what you have written with you.
             </p>
             <p lang="no">
-                Tusen takk for at du deltok i dette eksperimentet! Det er til stor hjelp for vår forskning :)
+                Vielen Dank für Ihre Teilnahme an dieser Studie! Damit helfen Sie uns sehr weiter bei unserer Forschung :)
                 <br> <br>
-                Du kan nå levere pc-en til den som er ansvarlig for eksperimentet. <span class="important_info">Sørg for at du ikke lukker noen faner eller programmer.</span>
+                Sie können nun den Computer an den Verantwortlichen übergeben. <span class="important_info"> Bitte schließen Sie nichts!</span>
                 <br> <br>
-                Du kan ta med deg det du har skrevet.
+                Sie können Ihre Notizen mitnehmen.
             </p>
         </div>
         <div class="navigation_buttons">
             <button onclick="navigate_to_next_page()"> 
                 <span lang="en">Continue</span> 
-                <span lang="no">Fortsett</span>
+                <span lang="no">Fortsetzen</span>
             </button>
         </div>
     </div>
@@ -41,17 +41,17 @@
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norsk</option>
+                <option value="no">Deutsch</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,20 +11,20 @@
     <div class="content">
         <div class="information">
             <h1 lang="en">Before we start the experiment:</h1>
-            <h1 lang="no">Før vi starter eksperimentet:</h1>
+            <h1 lang="no">Bevor wir dieses Experiment starten:</h1>
 
             <p lang="en">
                 Please inform the researcher that are to be equipped with the sensors. When the researcher says so, press the "continue" button below.
             </p>
             <p lang="no">
-                Vær vennlig og informer den ansvarlige for forsøket at du er klar for å få på sensorene. Når du har fått på deg utstyret og vedkommende sier at du er klar, kan du trykke på "Fortsett".
+                Bitte informieren Sie den Verantwortlichen, dass Sie mit den Sensoren ausgestattet werden sollen. Wenn der Verantwortliche die Zusage gibt, drücken Sie bitte auf die Schaltfläche "Fortsetzen".
             </p>
         </div>
         <div class="input">
             <form>
                 <label for="setup_complete">
                     <span lang="en">I do now wear the necessary sensors and am ready to start the experiment.</span> 
-                    <span lang="no">Jeg har nå på meg nødvendig utstyr og har fått klarsignal for å fortsette eksperimentet.</span> 
+                    <span lang="no">Ich trage die notwendigen Sensoren und bin bereit, das Experiment zu starten.</span> 
                 </label>
                 <br>
                 <input type="checkbox" id="setup_complete">
@@ -32,16 +32,16 @@
         </div>
         <div class="error_message" id="setup_complete_error">
             <p lang="en">You have to check the box to continue!</p>
-            <p lang="no">Du må huke av boksen for å fortsette!</p>
+            <p lang="no">Sie müssen die Box anklicken, um fortfahren zu können!</p>
         </div>
         <div class="navigation_buttons">
             <button onclick="navigate_to_previous_page()"> 
                 <span lang="en">Back</span> 
-                <span lang="no">Tilbake</span> 
+                <span lang="no">Zurück</span> 
             </button>
             <button onclick="navigate_to_next_page()"> 
                 <span lang="en">Continue</span> 
-                <span lang="no">Fortsett</span> 
+                <span lang="no">Fortsetzen</span> 
             </button>
         </div>
     </div>
@@ -49,17 +49,17 @@
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norsk</option>
+                <option value="no">Deutsch</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>

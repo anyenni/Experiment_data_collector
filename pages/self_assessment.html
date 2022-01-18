@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 <body>
     <div class="content">
         <h1 lang="en">Self-assessment</h1>
-        <h1 lang="no">Selvevaluering</h1>
+        <h1 lang="no">Selbsteinschätzung</h1>
 
         <hr>
 
@@ -21,9 +21,9 @@
             Please ask the researcher if you have any questions.
         </p>
         <p lang="no">
-            Fyll ut følgende skjema basert på hvordan du føler deg akkurat nå.
+            Bitte geben Sie im Folgenden an, wie Sie sich fühlen. 
             <br> <br>
-            Spør den ansvarlige for forsøket om om du har noen spørsmål.
+            Bitte fragen Sie den Verantwortlichen, wenn Sie irgendwelche Fragen haben.
         </p>
     
         <div id="self-assessment">
@@ -34,9 +34,9 @@
                     Drag the bar, so that it aligns with the chosen picture.
                 </p>
                 <p lang="no">
-                    Her skal du velge det bildet som beskriver best hvordan du føler akkurat nå.
+                    Hier sollen Sie jeweils ein Bild auswählen, welches am besten Ihre Gefühle beschreibt.
                     <br> <br>
-                    Dra i baren sånn at den står under det valgte bildet.
+                    Ziehen Sie den Schieber so, dass er sich auf der Höhe des gewählten Bildes befindet.
                 </p>
                 <div id="valence">
                     <img src="../images/SAM_valence.png" alt="SAM valence">
@@ -52,11 +52,11 @@
         <div class="navigation_buttons">
             <button onclick="navigate_to_previous_page()"> 
                 <span lang="en">Back</span> 
-                <span lang="no">Tilbake</span> 
+                <span lang="no">Zurück</span> 
             </button>
             <button onclick="navigate_to_next_page()"> 
                 <span lang="en">Continue</span> 
-                <span lang="no">Fortsett</span> 
+                <span lang="no">Fortsetzen</span> 
             </button>
         </div>
     </div>
@@ -64,17 +64,17 @@
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norsk</option>
+                <option value="no">Deutsch</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>

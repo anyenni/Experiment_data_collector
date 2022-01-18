@@ -8,7 +8,7 @@
     <div class="content">
         <div class="information">
             <h1 lang="en">Welcome page</h1>
-            <h1 lang="no">Velkommen</h1>
+            <h1 lang="no">Willkommen</h1>
             <p lang="en">
                 Hi! Welcome to this experiment. We are very happy that you chose to be a part of this. 
                 <br> <br>
@@ -22,20 +22,19 @@
             </p>
 
             <p lang="no">
-                <!-- Update info as above -->
-                Hei! Velkommen til dette eksperimentet. Vi er veldig takknemmelige for at du har valgt å delta. 
+                Hallo! Willkommen zu diesem Experiment. Wir freuen uns, dass Sie sich entschlossen haben an der Studie teilzunehmen.
                 <br> <br>
-                I dette eksperimentet vil du bli bedt om å skrive om flere emosjonelle situasjoner. Du kan srive på det språket som føles mest naturlig for deg.
+                In diesem Experiment werden Sie dazu gebeten, über mehrere emotionale Situationen zu schreiben. Sie können selbst entscheiden, in welcher Sprache Sie am liebsten schreiben wollen.
                 <br> <br>
-                <span class="important_info">Vi vil sørge for at alt du skriver forblir hos deg. Ingen vil lese tekstene du skriver i løpet av dette eksperimentet.</span>
+                <span class="important_info">Wir versichern Ihnen, dass alles Geschriebene bei Ihnen bleiben wird. Niemand außer Ihnen wird die im Rahmen dieses Experimentes verfassten Texte lesen. </span>
                 <br> <br>
-                Velg ønsket språk i menyen under og trykk "Fortsett" for å begynne eksperimentet.
+                Bitte suchen Sie sich Ihre bevorzugte Sprache für die Anleitungen im Menü unten aus und drücken Sie auf die Schaltfläche "Forsetzen" um anzufangen.
             </p>
         </div>
         <div class="navigation_buttons">
             <button onclick="navigate_to_next_page()"> 
                 <span lang="en">Continue</span> 
-                <span lang="no">Fortsett</span>
+                <span lang="no">Fortsetzen</span>
             </button>
         </div>
     </div>
@@ -43,17 +42,17 @@
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norsk</option>
+                <option value="no">Deutsch</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>

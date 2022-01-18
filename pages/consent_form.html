@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title lang="en">Consent form</title>
-    <title lang="no">Samtykkeskjema</title>
+    <title lang="no">Einverständniserklärung</title>
     <link rel="stylesheet" href="../general.css">
 </head>
 <body>
@@ -11,17 +11,17 @@
         
         <div class="information">
             <h1 lang="en">Consent form</h1>
-            <h1 lang="no">Samtykkeskjema</h1>
+            <h1 lang="no">Einverständniserklärung</h1>
 
             <iframe lang="en" src="../forms/Consent_form_English.pdf" width="100%" height="800px" frameborder="0"></iframe>
-            <iframe lang="no" src="../forms/Samtykkeskjema_Norsk.pdf" width="100%" height="800px" frameborder="0"></iframe>
+            <iframe lang="no" src="../forms/Consent_form_German.pdf" width="100%" height="800px" frameborder="0"></iframe>
             
         </div>
 
         <div class="input" id="consent_form">
             <form>
                 <label lang="en" for="consent">I have read the provided consent form, agree to the stated statements in the declaration of consent and wish to continue with the experiment.</label>
-                <label lang="no" for="consent">Jeg bekrefter at jeg har lest samtykkeskjemaet, er enig i påstandene i samtykkeerklæringen og ønsker å fortsette eksperimentet.</label>
+                <label lang="no" for="consent">Ich habe die vorliegende Einverständniserklärung gelesen, erkläre mich einverstanden mit den Aussagen und möchte mit dem Experiment fortfahren. </label>
                 <br>
                 <input type="checkbox" id="consent">
             </form>
@@ -29,29 +29,29 @@
         
         <div class="error_message" id="consent_form_error">
             <p lang="en">You cannot continue before you have checked the consent form. Talk to the examiner if you have any questions.</p>
-            <p lang="no">Du kan ikke fortsette uten å godkjenne samtykkeskjemaet. Snakk med den ansvarlige for forsøket om du har noen spørsmål.</p>
+            <p lang="no">Sie können nicht fortfahren bevor Sie Ihr Einverständnis gegeben haben. Bei Fragen wenden Sie sich bitte an den Verantwortlichen.</p>
         </div>
         
         <div class="navigation_buttons">
-            <button onclick="navigate_to_previous_page()"> <span lang="en">Back</span> <span lang="no">Tilbake</span> </button>
-            <button onclick="navigate_to_next_page()"> <span lang="en">Continue</span> <span lang="no">Fortsett</span> </button>
+            <button onclick="navigate_to_previous_page()"> <span lang="en">Back</span> <span lang="no">Zurück</span> </button>
+            <button onclick="navigate_to_next_page()"> <span lang="en">Continue</span> <span lang="no">Fortsetzen</span> </button>
         </div>
     </div>
     <div class="settings">
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norwegian</option>
+                <option value="no">German</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>

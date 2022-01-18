@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
     <div class="content">
         <div>
             <h1 lang="en">This is the final page of the experiment!</h1>
-            <h1 lang="no">Dette er siste side av eksperimentet</h1>
+            <h1 lang="no">Dies ist die letzte Seite des Experimentes!</h1>
 
             <p lang="en">
                 This page is for the reasearcher.
@@ -23,11 +23,11 @@
             </p>
 
             <p lang="no">
-                Denne siden er ment for den som er ansvarlig for gjennomføringen av eksperimentet.
+                Diese Seite ist für den Verantwortlichen des Experimentes.
                 <br>
-                Her skal du registrere en unik ID for deltakeren, samt skrive ned kommentarer du måtte ha om eksperimentet. 
+                Hier sollen Sie die ID für den Teilnehmer notieren, sowie einige Kommentare über das Experiment notieren. 
                 <br>
-                Skriv ned eventuelle forstyrrelser eller uregelmessigheter som kan ha påvirket resultatet.
+                Bitte geben Sie an, sollten Störungen oder Unregelmäßigkeiten aufgetreten sein, die das Ergebnis beeinflussen haben könnten.
             </p>
         </div>
         <div>
@@ -35,7 +35,7 @@
                 <form>
                     <label for="subject_id">
                         <span lang="en">Enter subject id:</span>
-                        <span lang="no">Skriv inn deltaker ID:</span>
+                        <span lang="no">Geben Sie die Teilnehmer-ID an:</span>
                     </label>
                     <input type="text" name="subject_id" id="subject_id">
                 </form>
@@ -43,7 +43,7 @@
             <div class="question">
                 <label for="comments">
                     <span lang="en">Do you have any comments about the experiment?</span>
-                    <span lang="no">Har du noen kommentarer om eksperimentet?</span>
+                    <span lang="no">Haben Sie Kommentare zu dem Experiment?</span>
                     <br>    
                 </label>
                 <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Write your comment here!"></textarea>
@@ -53,19 +53,19 @@
         <div class="popup" id="new_experiment_popup">
             <div class="popuptext">
                 <h3 lang="en">Are you sure you want to start a new experiment?</h3>
-                <h3 lang="no">Er du sikker på at du vil starte et nytt eksperiment?</h3>
+                <h3 lang="no">Sind Sie sicher, dass Sie ein neues Experiment starten wollen?</h3>
 
                 <p lang="en" id="popup_msg">When starting a new experiment, all the data from the previous session will be erased. If you have not saved the data, please do so before you continue.</p>
-                <p lang="no" id="popup_msg">Når du starter et nytt eksperiment vil all tidligere data bli slettet. Om du ikke har lagret dataen fra forrige gjennomgang, anbefales det at du gjør dette før du fortsetter.</p>
+                <p lang="no" id="popup_msg">Wenn Sie ein neues Experiment starten, werden alle Daten von der vorherigen Sitzung gelöscht. Wenn Sie die Daten noch nicht gesichert haben, bitte machen Sie das jetzt bevor Sie fortfahreb.</p>
             
                 <div class="navigation_buttons">
                     <button onclick="hide_popup('new_experiment_popup')">
                         <span lang="en">Cancel</span>
-                        <span lang="no">Avbryt</span>
+                        <span lang="no">Abbrechen</span>
                     </button>
                     <button onclick="start_new_experiment()">
                         <span lang="en">Start new experiment</span>
-                        <span lang="no">Start nytt eksperiment</span>
+                        <span lang="no">Neues Experiment starten</span>
                     </button>
 
                 </div>
@@ -75,11 +75,11 @@
         <div class="navigation_buttons">
             <button onclick="finalize()"> 
                 <span lang="en">Download data</span> 
-                <span lang="no">Last ned data</span> 
+                <span lang="no">Daten herunterladen</span> 
             </button>
             <button onclick="show_popup('new_experiment_popup')"> 
                 <span lang="en">Start new experiment</span> 
-                <span lang="no">Start nytt eksperiment</span> 
+                <span lang="no">Neues Experiment starten</span> 
             </button>
         </div>
     </div>
@@ -87,17 +87,17 @@
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norsk</option>
+                <option value="no">Deutsch</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>

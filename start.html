@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
         <div class="information">
             <h1>
                 <span lang="en">Welcome to this experiment!</span>
-                <span lang="no">Velkommen til dette eksperimentet!</span>
+                <span lang="no">Willkommen zu diesem Experiment!</span>
             </h1>
         </div>
         <div class="information">
@@ -21,18 +21,18 @@
                     A previous session was found in storage. The session has the following information:
                 </p>
                 <p lang="no">
-                    En tidligere gjennomgang av eksperimentet ble funnet i minnet. Gjennomgangen hadde følgende informasjon:
+                    Eine vorherige Sitzung wurde im Speicher gefunden. Die Sitzung hat folgende Informationen:
                 </p>
                 <p>
                     <br>
-                    <span lang="en">Date</span> <span lang="no">Dato</span> - <span id="prev_session_date"></span>
+                    <span lang="en">Date</span> <span lang="no">Datum</span> - <span id="prev_session_date"></span>
                     <br>
-                    <span lang="en">Time</span> <span lang="no">Tid</span> - <span id="prev_session_time"></span>
+                    <span lang="en">Time</span> <span lang="no">Zeit</span> - <span id="prev_session_time"></span>
                     <br>
-                    <span lang="en">Last page visited</span> <span lang="no">Sist besøkte side</span>  - <span id="prev_session_page"></span> 
+                    <span lang="en">Last page visited</span> <span lang="no">Letzte besuchte Seite</span>  - <span id="prev_session_page"></span> 
                     <br> <br>
                     <span lang="en">If you would like to continue where you left of, press the button "Continue previous session". Otherwise press "Start new experiment".</span>
-                    <span lang="no">Trykk på "Fortsett forrige gjennomføring" for å fortsette der du slapp. Ellers trykker du "Start nytt eksperiment".</span>
+                    <span lang="no">Wenn Sie die vorherige Sitzung fortsetzen wollen, klicken Sie auf "Vorherige Sitzung fortsetzen". Ansonsten klicken Sie auf "Neues Experiment starten".</span>
                 </p>
             </div>
             <div class="hidden" id="prev_session_not_found">
@@ -40,7 +40,7 @@
                     No previous session was found. Press "Start new experiment" to start a new experiment.
                 </p>
                 <p lang="no">
-                    Det ble ikke funnet noen tidligere gjennomføring av ekperimentet. Trykk på "Start nytt eksperiment" for å starte et nytt eksperiment.
+                    Keine vorherige Sitzung wurde gefunden. Drücken Sie "Neues Experiment starten" um ein neues Experiment zu starten.
                 </p>
             </div>
 
@@ -48,11 +48,11 @@
         <div class="navigation_buttons">
             <button onclick="start_new_experiment()">
                 <span lang="en">Start new experiment</span>
-                <span lang="no">Start nytt eksperiment</span>
+                <span lang="no">Neues Experiment starten</span>
             </button>
             <button onclick="continue_from_storage()">
                 <span lang="en">Continue previous session</span>
-                <span lang="no">Fortsett forrige gjennomføring</span>
+                <span lang="no">Vorherige Sitzung fortsetzen</span>
             </button>
         </div>
     </div>
@@ -61,17 +61,17 @@
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norsk</option>
+                <option value="no">Deutsch</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>

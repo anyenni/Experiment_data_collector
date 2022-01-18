@@ -10,7 +10,7 @@
         
         <div class="information">
             <h1 lang="en">Questionnaire</h1>
-            <h1 lang="no">Spørreskjema</h1>
+            <h1 lang="no">Fragebogen</h1>
 
             <p lang="en">
                 Please answer the following questions as truefully as possible.
@@ -18,9 +18,9 @@
                 If you do not want to answer one or more of the questions, please leave them blank.
             </p>
             <p lang="no">
-                Vær vennlig og svar så ærlig som mulig på de følgende spørsmålene. 
+                Bitte versuchen Sie die folgenden Fragen so wahrheitsgetreu wie möglich zu beantworten. 
                 <br>
-                Dersom du ikke ønsker å svare på ett eller flere av spørsmålene, kan du la dem stå ubesvarte.
+                Wenn sie eine oder mehrere Fragen nicht beantworten möchten, lassen Sie sie bitte leer.
             </p>
             
         </div>
@@ -29,7 +29,7 @@
             <div class="question">
                 <label for="age"> 
                     <span lang="en">Age:</span>
-                    <span lang="no">Alder:</span>
+                    <span lang="no">Alter:</span>
                 </label>
                     <input type="number" name="age" id="age" required>
             </div>
@@ -37,7 +37,7 @@
             <div class="question">
                 <label for="gender">
                     <span lang="en">Gender:</span>
-                    <span lang="no">Kjønn:</span>
+                    <span lang="no">Geschlecht:</span>
                 </label> 
 
                 <select lang="en" name="gender" id="gender">
@@ -48,16 +48,16 @@
                 </select>
                 <select lang="no" name="gender" id="gender">
                     <option value="none"></option>
-                    <option value="male">Mann</option>
-                    <option value="female">Dame</option>
-                    <option value="other">Annet</option>
+                    <option value="male">Männlich</option>
+                    <option value="female">Weiblich</option>
+                    <option value="other">Divers</option>
                 </select>
             </div>
 
             <div class="question">
                 <label for="ate">
                     <span lang="en">When was the last time you ate?</span>
-                    <span lang="no">Når spiste du sist?</span>    
+                    <span lang="no">Wann haben Sie das letzte Mal etwas gegessen?</span>    
                 </label>
                 <input type="time" name="ate" id="ate" required>
             </div>
@@ -70,9 +70,9 @@
                         (1 = Very bad, 6 = Very well)
                     </span>
                     <span lang="no">
-                        Hvor godt sov du i natt?
+                        Wie würden Sie die Qualität Ihres Schlafes letzte Nacht bewerten?
                         <br>
-                        (1 = Veldig dårlig, 6 = Veldig bra)
+                        (1 = Sehr schlecht, 6 = Sehr gut)
                     </span>
                 </label>
                 <div class="radio_select" id="sleep_quality">
@@ -108,9 +108,9 @@
                         (1 = Very uncomfortable, 6 = Very comfortable)
                     </span>
                     <span lang="no"> 
-                        Hvordan vil du rangere din fysiske komfort akkurat nå?
+                        Inwieweit fühlen Sie sich körperlich wohl im Moment?
                         <br> 
-                        (1 = Veldig ukomfortabel, 6 = Veldig komfortabel)
+                        (1 = Sehr unwohl, 6 = Sehr wohl)
                     </span>
                 </label>
                 <div class="radio_select" id="comfort_physic">
@@ -143,9 +143,9 @@
                         (1 = Very uncomfortable, 6 = Very comfortable)
                     </span>
                     <span lang="no">
-                        Hvor komfortabel føler du deg i denne situasjonen?
+                        Wie wohl fühlen Sie sich in Situationen wie dieser?
                         <br> 
-                        (1 = Veldig ukomfortabel, 6 = Veldig komfortabel)
+                        (1 = Sehr unwohl, 6 = Sehr wohl)
                     </span>
                 </label>
                 <div class="radio_select" id="comfort_social">
@@ -174,11 +174,11 @@
         <div class="navigation_buttons">
             <button onclick="navigate_to_previous_page()"> 
                 <span lang="en">Back</span> 
-                <span lang="no">Tilbake</span> 
+                <span lang="no">Zurück</span> 
             </button>
             <button onclick="navigate_to_next_page()"> 
                 <span lang="en">Continue</span> 
-                <span lang="no">Fortsett</span> 
+                <span lang="no">Fortsetzen</span> 
             </button>
         </div>
     </div>
@@ -187,17 +187,17 @@
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norsk</option>
+                <option value="no">Deutsch</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>

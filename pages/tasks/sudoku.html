@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,51 +12,43 @@
     <div class="content">
         <div class="information">
             <h1 lang="en">Pause Task - Sudoku</h1>
-            <h1 lang="no">Pauseoppgave - Sudoku</h1>
+            <h1 lang="no">Pausenaufgabe - Sudoku</h1>
 
             <hr>
 
             <p lang="en">
-                Now it is time to pause for a second and perform a simple distractive task.
-                <br> <br>
-                Talk to the researcher if you have not been given the material for the tasks yet.
-                <br> <br>
                 This session will last for 4 minutes. Try to relax when performing the tasks and do not stress if you are not able to finish on time. 
                 <br> <br>
                 You will be notified when the time is up.
             </p>
             <p lang="no">
-                Nå er det på tide å ta en liten pause og utføre en enkel distraksjonsoppgave.
+                Diese Sitzung wird 4 Minuten dauern. Versuchen Sie, sich zu entspannen während Sie die Aufgabe lösen und machen Sie sich keinen Stress, wenn Sie die Aufgabe nicht in der vorgegebenen Zeit beenden.
                 <br> <br>
-                Snakk med den som er ansvarlig for eksperimentet om du ikke har fått utdelt oppgaven enda.
-                <br> <br>
-                Denne sesjonen vil vare i 4 minutter. Prøv å slappe av så godt det lar seg gjøre mens du utfører oppgavene og ikke stress med å bli ferdig.
-                <br> <br>
-                Du vil få beskjed når tiden er ute.
+                Sie werden benachrichtigt, wenn die Zeit vorbei ist.
             </p>
             <div class="task_description">
                 <h3 lang="en">Task-description:</h3>
-                <h3 lang="no">Oppgavebeskrivelse:</h3>
+                <h3 lang="no">Aufgabenbeschreibung:</h3>
                 <p lang="en">
                     In this task, we want you to fill out the number 1-9 in all cells so that each number is not repeated within any of the 3 X 3 squares or in any row or column.
                 </p>
                 <p lang="no">
-                    I denne oppgaven skal du fylle ut tallene 1-9 i de tomme feltene slik at hvert tall kun står én gang på hver kolonne, rad og i hver av de markerte 3 X 3 boksene.
+                    In dieser Aufgabe sollen Sie die Felder mit den Zahlen 1-9 füllen, sodass keine der Zahlen wiederholt wird in jeglichem der 3 X 3 Quadrate oder in jeglicher Zeile oder Spalte.
                 </p>
             </div>
         </div>
         <div class="navigation_buttons development">
-            <button onclick="navigate_to_previous_page()"> <span lang="en">Back</span> <span lang="no">Tilbake</span> </button>
-            <button onclick="navigate_to_next_page()"> <span lang="en">Continue</span> <span lang="no">Fortsett</span> </button>
+            <button onclick="navigate_to_previous_page()"> <span lang="en">Back</span> <span lang="no">Zurück</span> </button>
+            <button onclick="navigate_to_next_page()"> <span lang="en">Continue</span> <span lang="no">Fortsetzen</span> </button>
         </div>
 
         <div class="popup" id="popup_countdown">
             <div class="popuptext" >
                 <h3 lang="en">Time is running out!</h3>
-                <h3 lang="no">Tiden løper ut!</h3>
+                <h3 lang="no">Die Zeit geht zu Ende!</h3>
 
                 <p lang="en" id="popup_msg">You will be brought to the next page in <span id="time_left"></span> seconds.</p>
-                <p lang="no" id="popup_msg">Du vil bli sendt til neste side om <span id="time_left"></span> sekunder.</p>
+                <p lang="no" id="popup_msg">Sie werden zur nächsten Seite weitergeleitet in <span id="time_left"></span> Sekunden.</p>
             </div>
         </div>
     </div>
@@ -64,17 +56,17 @@
         <div class="language_select">
             <label for="language_select">
                 <span lang="en">Language:</span>
-                <span lang="no">Språk:</span>
+                <span lang="no">Sprache:</span>
             </label>
             <select name="language_select" id="language_select" onchange="update_language()">
                 <option value="en" selected="selected">English</option>
-                <option value="no">Norwegian</option>
+                <option value="no">Deutsch</option>
             </select>
         </div>
         <div class="view_select">
             <label for="view_select">
                 <span lang="en">View type:</span>
-                <span lang="no">Visningstype:</span>
+                <span lang="no">Ansicht:</span>
             </label>
             <select name="view_select" id="view_select" onchange="update_view()">
                 <option value="experiment" selected="selected">Experiment</option>
